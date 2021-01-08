@@ -6,6 +6,7 @@
     </header>
   {{end}}
   {{with $st.Params.subtitle}}
+  {{ partial "likecoin.html" . }}
     <p>{{ .|markdownify|emojify }}</p>
   {{end}}
 </div>
